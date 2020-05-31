@@ -294,6 +294,8 @@
 			children = (
 				A91B078B24835CF700DB803C /* Person */,
 				A91B079024835CF700DB803C /* Location */,
+				5B3ED77B24829FF80033FF79 /* CustomNavigationBar.swift */,
+				EE48509D24833F73003562AD /* MainTabBar.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -305,6 +307,7 @@
 				A91B078D24835CF700DB803C /* PersonCell.swift */,
 				A91B078E24835CF700DB803C /* PersonHeaderCell.swift */,
 				A91B078F24835CF700DB803C /* PersonCell.xib */,
+
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE485092248335B4003562AD /* LocationCell.xib in Resources */,
 				5B3ED74C2481CA000033FF79 /* LaunchScreen.storyboard in Resources */,
 				A91B07B024835CF700DB803C /* LocationCell.xib in Resources */,
 				5B3ED7492481CA000033FF79 /* Assets.xcassets in Resources */,
@@ -474,6 +478,17 @@
 				A91B07B224835CF700DB803C /* AppDelegate.swift in Sources */,
 				A91B07AB24835CF700DB803C /* Petition.swift in Sources */,
 				A91B07A724835CF700DB803C /* MainTabBar.swift in Sources */,
+				5B3ED77C24829FF80033FF79 /* CustomNavigationBar.swift in Sources */,
+				5B3ED769248292B80033FF79 /* HomeController.swift in Sources */,
+				5B3ED76D2482932A0033FF79 /* DonationsController.swift in Sources */,
+				EE4850972483380A003562AD /* PersonCell.swift in Sources */,
+				EE48509E24833F73003562AD /* MainTabBar.swift in Sources */,
+				5B3ED7402481C9F50033FF79 /* AppDelegate.swift in Sources */,
+				5B3ED7422481C9F50033FF79 /* SceneDelegate.swift in Sources */,
+				EE494BD22482DAE3005DF3E3 /* PersonController.swift in Sources */,
+				EE485091248335B4003562AD /* LocationCell.swift in Sources */,
+				5B3ED772248293860033FF79 /* PetitionsController.swift in Sources */,
+				EE48509B24833B80003562AD /* PersonHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
