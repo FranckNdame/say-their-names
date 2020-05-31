@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonInfoViewController: UIViewController {
+class PersonDetailsController: UIViewController {
 
     @IBOutlet weak var mediaCollectionView: UICollectionView!
     
@@ -22,7 +22,7 @@ class PersonInfoViewController: UIViewController {
     }
 }
 
-extension PersonInfoViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PersonDetailsController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5

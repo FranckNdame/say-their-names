@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonInfoViewController" customModule="Say_Their_Names" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonDetailsController" customModule="Say_Their_Names" customModuleProvider="target">
             <connections>
                 <outlet property="mediaCollectionView" destination="McM-BW-8Yf" id="agc-5Q-Euo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -229,8 +229,8 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="hEs-Cb-udW" userLabel="Story Stack View">
                                                     <rect key="frame" x="24" y="323" width="366" height="118.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTEXT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-8S-9aw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="74.5" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINNESOTA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdQ-8S-9aw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="96" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="Uso-Z9-7Xh"/>
                                                             </constraints>

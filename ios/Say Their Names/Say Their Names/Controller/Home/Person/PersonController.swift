@@ -20,7 +20,7 @@ class PersonController: UIViewController {
     }
 
     @IBAction func didPressReadButton(_ sender: Any) {
-        let controller = PersonInfoViewController(nibName: "PersonInfoViewController", bundle: nil)
+        let controller = PersonDetailsController(nibName: "PersonDetailsController", bundle: nil)
         present(controller, animated: true, completion: nil)
     }
     
