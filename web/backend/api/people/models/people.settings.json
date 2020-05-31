@@ -23,8 +23,23 @@
       "plugin": "upload",
       "required": false
     },
-    "date_of_death": {
+    "deathDate": {
       "type": "date"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "childrenCount": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "context": {
+      "type": "text"
     }
   }
 }
