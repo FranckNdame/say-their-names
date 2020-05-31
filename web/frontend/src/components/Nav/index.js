@@ -6,9 +6,9 @@ const Nav = () => {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-          <a href="#">
+        <Link to={`/`} className="uk-link-reset">
             <h1>Say Their Names</h1>
-          </a>
+          </Link>
       </div>
       <div className="navbar__links">
         <a href="/about">About</a>

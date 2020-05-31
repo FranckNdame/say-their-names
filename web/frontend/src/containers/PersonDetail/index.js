@@ -1,21 +1,20 @@
 import React from "react";
 import { useParams } from "react-router";
-import Articles from "../../components/Articles";
+import PersonDetail from "../../components/PersonDetail";
 import Query from "../../components/Query";
-import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
+import PERSON_DETAIL_QUERY from "../../queries/personDetail/personDetail";
 
-const Category = () => {
+const PersonDetailContainer = () => {
   let { id } = useParams();
 
   return (
-    <Query query={CATEGORY_ARTICLES_QUERY} id={id}>
-      {({ data: { category } }) => {
+    <Query query={PERSON_DETAIL_QUERY} id={id}>
+      {({ data: { person } }) => {
         return (
           <div>
             <div className="uk-section">
               <div className="uk-container uk-container-large">
-                <h1>{category.name}</h1>
-                <Articles articles={category.articles} />
+                <PersonDetail person={person} />
               </div>
             </div>
           </div>
@@ -25,4 +24,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default PersonDetailContainer;
