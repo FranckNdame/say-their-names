@@ -8,15 +8,11 @@ const Person = ({ person }) => {
       : process.env.REACT_APP_BACKEND_URL + person.image.url;
   return (
     <Link to={`/people/${person.id}`} className="uk-link-reset">
-      <div className="uk-card uk-card-muted">
-        <div className="uk-card-media-top">
-          <img src={imageUrl} alt={person.image.url} height="100" />
-        </div>
-        <div className="uk-card-body">
-          <p id="category" className="uk-text-uppercase">
-            {person.name}
-          </p>
-        </div>
+      <div className="person-container">
+          <div className="person-img" role="img" aria-label={'Photo of ' + person.name}
+                style={{backgroundImage: 'url(' + imageUrl + ')'}}/>
+          <h2 className="person-name">{person.name}</h2>
+          <h3 className="person-subtitle">{person.date_of_death}</h3>
       </div>
     </Link>
   );

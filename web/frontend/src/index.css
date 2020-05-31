@@ -50,3 +50,70 @@ img:hover {
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
+.people-container {
+  max-width: 85%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+@media (max-width: 700px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .people-container {
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .people-container {
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+.person-container:hover {
+
+}
+
+.person-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: -36px;
+}
+
+.person-img {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  background-size: cover;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.person-img:hover {
+  opacity: 0.9;
+}
+
+.person-subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #969696;
+}

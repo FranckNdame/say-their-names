@@ -6,11 +6,9 @@ import Person from "../../components/Person"
 const People = ({ people }) => {
   return (
     <div>
-      {/* Remove this */}
-      <h2>This is the collection page</h2> 
-    {people.map((person, i) => {
-      return <Person person={person} key={`people__${people.id}`} />;
-    })}
+      <div className="people-container">
+        {people.map((person, i) => <Person person={person} key={`people__${people.id}`}/>)}
+      </div>
   </div>
   );
 };
