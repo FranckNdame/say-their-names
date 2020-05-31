@@ -59,7 +59,7 @@
                                                             <constraint firstAttribute="width" constant="300" id="qQQ-OT-Lj6"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z19-R7-v8s">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z19-R7-v8s">
                                                         <rect key="frame" x="16" y="36" width="21" height="22"/>
                                                         <state key="normal" image="Close Icon"/>
                                                         <connections>
