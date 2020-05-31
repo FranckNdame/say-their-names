@@ -99,11 +99,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Franck Ndame - [@breezedoc_in](https://twitter.com/breezedoc_in) - email@example.com
-
 
 
 
