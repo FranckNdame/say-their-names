@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:fillViewport="true"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
     tools:context=".activity.DetailsActivity">
 
 
@@ -15,122 +15,433 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/linearLayoutDetails">
 
-            <com.jgabrielfreitas.core.BlurImageView
-                android:id="@+id/dogBlurImageView"
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.jgabrielfreitas.core.BlurImageView
+                    android:id="@+id/dogBlurImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mrfloyd"
+                    app:radius="24" />
+
+                <ImageView
+                    android:id="@+id/actual_image"
+                    android:layout_width="300dp"
+                    android:layout_height="450dp"
+                    android:layout_gravity="center"
+                    android:elevation="0dp"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_close"
+                    android:textColor="@android:color/white" />
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
-                android:src="@drawable/mrfloyd"
-                app:radius="24" />
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
-            <ImageView
-                android:id="@+id/actual_image"
-                android:layout_width="300dp"
-                android:layout_height="450dp"
-                android:layout_gravity="center"
-                android:elevation="0dp"
-                android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="GEORGE FLOYD"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_close"
-                android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text=" asdhajksdkha hakhsdkjahskdh kjhkahsjdhkahsjkdhaksh kjhkhkadasd  asdasd It all started when a restaurant bouncer and aspiring commercial driver Floyd, 46 tried to buy groceries. He went to"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtName"
+                    app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
-        </FrameLayout>
+                <ImageButton
+                    android:id="@+id/btnReadmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="@+id/txtDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDescription"
+                    app:srcCompat="@drawable/readmore" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorSecondaryGrey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnReadmore" />
+
+                <Button
+                    android:id="@+id/btnDonate"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Donate"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+                    app:layout_constraintStart_toStartOf="@+id/txtDescription"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <ImageButton
+                    android:id="@+id/btnBookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="17dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+                    app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+                    app:layout_constraintTop_toTopOf="@+id/txtName"
+                    app:srcCompat="@drawable/ic_bookmark" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+            android:id="@+id/linearLayoutReadmore"
+            android:visibility="gone"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="GEORGE FLOYD"
-                android:textSize="24sp"
-                android:textColor="@color/colorBlack"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtDescription"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="24dp"
-                android:text=" asdhajksdkha hakhsdkjahskdh kjhkahsjdhkahsjkdhaksh kjhkhkadasd  asdasd It all started when a restaurant bouncer and aspiring commercial driver Floyd, 46 tried to buy groceries. He went to"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/txtName"
-                app:layout_constraintTop_toBottomOf="@+id/txtName" />
-
-            <ImageButton
-                android:id="@+id/btnReadmore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/transparent"
-                app:layout_constraintStart_toStartOf="@+id/txtDescription"
-                app:layout_constraintTop_toBottomOf="@+id/txtDescription"
-                app:srcCompat="@drawable/readmore" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="wrap_content"
-                android:layout_height="2dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/colorSecondaryGrey"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnReadmore" />
-
-            <Button
-                android:id="@+id/btnDonate"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Donate"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/txtDescription"
-                app:layout_constraintStart_toStartOf="@+id/txtDescription"
-                app:layout_constraintTop_toBottomOf="@+id/view" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
-            <ImageButton
-                android:id="@+id/btnBookmark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="17dp"
-                android:background="@android:color/transparent"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toTopOf="@+id/txtDescription"
-                app:layout_constraintEnd_toEndOf="@+id/txtDescription"
-                app:layout_constraintTop_toTopOf="@+id/txtName"
-                app:srcCompat="@drawable/ic_bookmark" />
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageButton
+                        android:id="@+id/btnShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+                        app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+                        app:layout_constraintTop_toTopOf="@+id/txtName"
+                        app:srcCompat="@drawable/ic_share" />
+
+                    <TextView
+                        android:id="@+id/txtMoreName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="GEORGE FLOYD"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="24sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/btnMoreBookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+                        app:layout_constraintEnd_toEndOf="@+id/txtDescription"
+                        app:layout_constraintTop_toTopOf="@+id/txtName"
+                        app:srcCompat="@drawable/ic_bookmark" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@color/colorSecondaryGrey"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="146dp"
+                    android:layout_height="233dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2"
+                    app:srcCompat="@drawable/mrfloyd" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FULL NAME" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GEORGE FLOYD"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AGE" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="46"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="2dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorSecondaryGrey"
+                                android:minHeight="50dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CHILDREN" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="100dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorSecondaryGrey" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LOCATION" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MINNESOTA"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="CONTEXT"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/context"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="MEDIA"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                <!-- USE BUTTONS FOR THE TIME BEING-->
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+                    <ImageButton
+                        android:id="@+id/button3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+
+                        android:text="Button" />
+
+                    <ImageButton
+                        android:id="@+id/button4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Button" />
+
+                    <ImageButton
+                        android:id="@+id/button5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Button" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/colorSecondaryGrey"
+                    app:layout_constraintBottom_toTopOf="@+id/btnMoreDonate"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/btnMoreDonate"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Donate"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView13"
+                    app:layout_constraintStart_toStartOf="@+id/textView13" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>
