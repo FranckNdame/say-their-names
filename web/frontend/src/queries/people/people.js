@@ -8,7 +8,7 @@ const PEOPLE_QUERY = gql`
       image {
         url
       }
-      date_of_death
+      deathDate
     }
   }
 `;
