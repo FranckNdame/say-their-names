@@ -31,6 +31,12 @@
 		EE494BD22482DAE3005DF3E3 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE494BD02482DAE3005DF3E3 /* PersonController.swift */; };
 		EE494BD32482DAE3005DF3E3 /* PersonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE494BD12482DAE3005DF3E3 /* PersonController.xib */; };
 		EE494BD62482DDFB005DF3E3 /* temp.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE494BD52482DDFB005DF3E3 /* temp.xib */; };
+		EE4A9EB32482E845002D7154 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EB22482E845002D7154 /* Person.swift */; };
+		EE4A9EB52482EA6D002D7154 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EB42482EA6D002D7154 /* Donation.swift */; };
+		EE4A9EB72482EAA5002D7154 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EB62482EAA5002D7154 /* Petition.swift */; };
+		EE4A9EB92482EF2F002D7154 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EB82482EF2F002D7154 /* CategoriesCell.swift */; };
+		EE4A9EBC2482EFE6002D7154 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EBB2482EFE6002D7154 /* UIFont++.swift */; };
+		EE4A9EBE2482F12C002D7154 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A9EBD2482F12C002D7154 /* UIView++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		EE494BD02482DAE3005DF3E3 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		EE494BD12482DAE3005DF3E3 /* PersonController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonController.xib; sourceTree = "<group>"; };
 		EE494BD52482DDFB005DF3E3 /* temp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp.xib; sourceTree = "<group>"; };
+		EE4A9EB22482E845002D7154 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EE4A9EB42482EA6D002D7154 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		EE4A9EB62482EAA5002D7154 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		EE4A9EB82482EF2F002D7154 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		EE4A9EBB2482EFE6002D7154 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
+		EE4A9EBD2482F12C002D7154 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +192,9 @@
 		5B3ED7662482928A0033FF79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE4A9EB22482E845002D7154 /* Person.swift */,
+				EE4A9EB42482EA6D002D7154 /* Donation.swift */,
+				EE4A9EB62482EAA5002D7154 /* Petition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,8 +281,18 @@
 		EE494BD42482DB0A005DF3E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE4A9EB82482EF2F002D7154 /* CategoriesCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EE4A9EBA2482EFDC002D7154 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				EE4A9EBB2482EFE6002D7154 /* UIFont++.swift */,
+				EE4A9EBD2482F12C002D7154 /* UIView++.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,8 +409,11 @@
 				A9B493F92482EF6500614597 /* UIColor+Resource.swift in Sources */,
 				5B3ED769248292B80033FF79 /* HomeController.swift in Sources */,
 				5B3ED76D2482932A0033FF79 /* DonationsController.swift in Sources */,
+				EE4A9EB92482EF2F002D7154 /* CategoriesCell.swift in Sources */,
+				EE4A9EBE2482F12C002D7154 /* UIView++.swift in Sources */,
 				5B3ED7402481C9F50033FF79 /* AppDelegate.swift in Sources */,
 				5B3ED7422481C9F50033FF79 /* SceneDelegate.swift in Sources */,
+				EE4A9EB72482EAA5002D7154 /* Petition.swift in Sources */,
 				EE494BD22482DAE3005DF3E3 /* PersonController.swift in Sources */,
 				A9B494002482F57600614597 /* STNSize.swift in Sources */,
 				5B3ED772248293860033FF79 /* PetitionsController.swift in Sources */,
