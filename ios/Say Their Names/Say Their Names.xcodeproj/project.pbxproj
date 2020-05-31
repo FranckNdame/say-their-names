@@ -21,6 +21,8 @@
 		5B3ED778248296F00033FF79 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3ED776248296EF0033FF79 /* Karla-Bold.ttf */; };
 		5B3ED779248296F00033FF79 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3ED777248296F00033FF79 /* Karla-Regular.ttf */; };
 		5B3ED77C24829FF80033FF79 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3ED77B24829FF80033FF79 /* CustomNavigationBar.swift */; };
+		7499215A2483E68700640E27 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749921582483E68700640E27 /* PersonInfoViewController.swift */; };
+		7499215B2483E68700640E27 /* PersonInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749921592483E68700640E27 /* PersonInfoViewController.xib */; };
 		EE485091248335B4003562AD /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48508F248335B4003562AD /* LocationCell.swift */; };
 		EE485092248335B4003562AD /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE485090248335B4003562AD /* LocationCell.xib */; };
 		EE4850972483380A003562AD /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4850952483380A003562AD /* PersonCell.swift */; };
@@ -61,6 +63,8 @@
 		5B3ED776248296EF0033FF79 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
 		5B3ED777248296F00033FF79 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
 		5B3ED77B24829FF80033FF79 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		749921582483E68700640E27 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		749921592483E68700640E27 /* PersonInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonInfoViewController.xib; sourceTree = "<group>"; };
 		EE48508F248335B4003562AD /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		EE485090248335B4003562AD /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
 		EE4850952483380A003562AD /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			children = (
 				EE494BD02482DAE3005DF3E3 /* PersonController.swift */,
 				EE494BD12482DAE3005DF3E3 /* PersonController.xib */,
+				749921582483E68700640E27 /* PersonInfoViewController.swift */,
+				749921592483E68700640E27 /* PersonInfoViewController.xib */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				EE494BD32482DAE3005DF3E3 /* PersonController.xib in Resources */,
 				5B3ED773248293860033FF79 /* PetitionsController.xib in Resources */,
 				EE4850982483380A003562AD /* PersonCell.xib in Resources */,
+				7499215B2483E68700640E27 /* PersonInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 				EE48509E24833F73003562AD /* MainTabBar.swift in Sources */,
 				5B3ED7402481C9F50033FF79 /* AppDelegate.swift in Sources */,
 				5B3ED7422481C9F50033FF79 /* SceneDelegate.swift in Sources */,
+				7499215A2483E68700640E27 /* PersonInfoViewController.swift in Sources */,
 				EE494BD22482DAE3005DF3E3 /* PersonController.swift in Sources */,
 				EE485091248335B4003562AD /* LocationCell.swift in Sources */,
 				5B3ED772248293860033FF79 /* PetitionsController.swift in Sources */,
@@ -454,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

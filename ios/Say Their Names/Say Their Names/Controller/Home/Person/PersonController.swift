@@ -12,7 +12,6 @@ class PersonController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -20,5 +19,9 @@ class PersonController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func didPressReadButton(_ sender: Any) {
+        let controller = PersonInfoViewController(nibName: "PersonInfoViewController", bundle: nil)
+        present(controller, animated: true, completion: nil)
+    }
     
 }
