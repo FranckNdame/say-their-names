@@ -6,6 +6,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Karla-Bold.ttf">
+            <string>Karla-Bold</string>
+        </array>
         <array key="Karla-Regular.ttf">
             <string>Karla-Regular</string>
         </array>
@@ -30,7 +33,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkg-Cb-rtl">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-3m-XIx">
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-3m-XIx" userLabel="Header Stack View">
                                             <rect key="frame" x="24" y="30" width="366" height="59"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-yu-OcC" userLabel="Share View">
@@ -91,12 +94,135 @@
                                                 </view>
                                             </subviews>
                                         </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man-in-red-jacket-1681010" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-fe-Shf">
+                                            <rect key="frame" x="24" y="123" width="134" height="175"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="134" id="Wii-sw-goM"/>
+                                                <constraint firstAttribute="width" secondItem="ey4-fe-Shf" secondAttribute="height" multiplier="134:175" id="YTk-mr-qdq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-RA-Ren" userLabel="Details Stack View">
+                                            <rect key="frame" x="178" y="123" width="212" height="180"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-KF-IYC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQK-qg-DrE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60.5" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="ALe-eJ-Cg1"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="12"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEORGE FLOYD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cds-Ty-Z9F">
+                                                            <rect key="frame" x="0.0" y="20" width="114" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
+                                                            <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AI3-bV-Zvc">
+                                                    <rect key="frame" x="0.0" y="59" width="138" height="121"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oza-2S-Btw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-cC-E9u">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="21.5" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-pP-Rbz">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="21.5" height="14"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="14" id="duU-Nr-eH8"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="12"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLY-TU-MHb">
+                                                                            <rect key="frame" x="0.0" y="19" width="21.5" height="31"/>
+                                                                            <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
+                                                                            <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw8-eo-Slg" userLabel="Separator">
+                                                                    <rect key="frame" x="51.5" y="0.0" width="1" height="50"/>
+                                                                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="1" id="xAv-Hh-6X9"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KG4-c9-TPg">
+                                                                    <rect key="frame" x="82.5" y="0.0" width="55.5" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHILDREN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6w-fe-FJ2">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="55.5" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="12"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-Qe-pj9">
+                                                                            <rect key="frame" x="0.0" y="19.5" width="55.5" height="30.5"/>
+                                                                            <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
+                                                                            <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="upb-Z4-7zC">
+                                                            <rect key="frame" x="0.0" y="70" width="138" height="51"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRj-5B-Prt" userLabel="Separator">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="138" height="1"/>
+                                                                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="0b4-fs-zek"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o0m-V4-0t4">
+                                                                    <rect key="frame" x="0.0" y="12" width="90.5" height="39"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-jg-PFY">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="52.5" height="15"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="15" id="jOB-u3-BeL"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="12"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINNESOTA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2If-RD-ddD">
+                                                                            <rect key="frame" x="0.0" y="20" width="90.5" height="19"/>
+                                                                            <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
+                                                                            <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
+                                        <constraint firstItem="VHv-RA-Ren" firstAttribute="leading" secondItem="ey4-fe-Shf" secondAttribute="trailing" constant="20" id="5fp-Jw-sKh"/>
                                         <constraint firstAttribute="trailing" secondItem="ANh-3m-XIx" secondAttribute="trailing" constant="24" id="6X6-f2-H57"/>
                                         <constraint firstItem="ANh-3m-XIx" firstAttribute="top" secondItem="Vkg-Cb-rtl" secondAttribute="top" constant="30" id="FnC-1g-C9E"/>
+                                        <constraint firstItem="VHv-RA-Ren" firstAttribute="top" secondItem="ANh-3m-XIx" secondAttribute="bottom" constant="34" id="GdW-Hs-XGD"/>
+                                        <constraint firstItem="ey4-fe-Shf" firstAttribute="leading" secondItem="Vkg-Cb-rtl" secondAttribute="leading" constant="24" id="PwS-I3-9hL"/>
+                                        <constraint firstItem="ey4-fe-Shf" firstAttribute="top" secondItem="ANh-3m-XIx" secondAttribute="bottom" constant="34" id="mqL-p2-aFY"/>
                                         <constraint firstItem="ANh-3m-XIx" firstAttribute="leading" secondItem="Vkg-Cb-rtl" secondAttribute="leading" constant="24" id="n28-ch-IIJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="VHv-RA-Ren" secondAttribute="trailing" constant="24" id="xSL-RB-Iqm"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -127,5 +253,6 @@
     <resources>
         <image name="Share Icon" width="26" height="26"/>
         <image name="bookmark_active" width="17" height="22.5"/>
+        <image name="man-in-red-jacket-1681010" width="3456" height="5184"/>
     </resources>
 </document>
