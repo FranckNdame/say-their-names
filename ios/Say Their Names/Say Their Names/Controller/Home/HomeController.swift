@@ -65,7 +65,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return collectionView == peopleCollectionView ? .init(width: peopleCollectionView.frame.width - 32, height: 150) : .init(width: 0, height: 0)
+        return collectionView == peopleCollectionView ? .init(width: peopleCollectionView.frame.width - 32, height: 166) : .init(width: 0, height: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -81,7 +81,7 @@ extension HomeController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return collectionView == locationCollectionView ? .init(width: 103, height: 36) : .init(width: 165, height: 300)
+        return collectionView == locationCollectionView ? .init(width: 103, height: 36) : .init(width: peopleCollectionView.frame.width / 2 - 24, height: 300)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
