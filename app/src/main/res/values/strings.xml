@@ -2,7 +2,7 @@
     <string name="app_name">Say Their Names</string>
     <string name="title_activity_main2">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_donation">Donations</string>
+    <string name="title_petition">Petitions</string>
     <string name="context">The death of George Floyd occurred on May 25, 2020, when Derek Chauvin, a white Minneapolis police officer, kneeled on his neck for at least seven minutes</string>
 </resources>

@@ -5,10 +5,6 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -78,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_home:
                 frag = HomeFragment.newInstance("Home");
                 break;
-            case R.id.navigation_dashboard:
+            case R.id.navigation_donation:
                 frag = HomeFragment.newInstance("Dash");
                 break;
-            case R.id.navigation_notifications:
+            case R.id.navigation_petitions:
                 frag = HomeFragment.newInstance("Notification");
                 break;
         }

@@ -6,11 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.blm.saytheirnames.R;
 
@@ -47,7 +44,7 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // initialize views
-        mContent = view.findViewById(R.id.navigation_dashboard);
+        mContent = view.findViewById(R.id.navigation_donation);
         mTextView = view.findViewById(R.id.text_home);
 
         // retrieve text and color from bundle or savedInstanceState
