@@ -9,12 +9,18 @@
 import UIKit
 
 class HomeController: UIViewController {
-
+    
+    let navBar = CustomNavigationBar()
+    @IBOutlet weak var locationCollectionView: UICollectionView!
+    @IBOutlet weak var peopleCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
 
-        // Do any additional setup after loading the view.
+        let personController = PersonController(nibName: "PersonController", bundle: nil)
+        personController.modalPresentationStyle = .fullScreen
+        present(personController, animated: true, completion: nil)
     }
 
 
