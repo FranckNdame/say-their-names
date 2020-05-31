@@ -1,62 +1,52 @@
-# Strapi Starter React Blog
+# Say Their Names
 
-React starter for creating a blog with Strapi.
+## Docs
 
-This starter allows you to try Strapi with React with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
+- [Contributing](#contributing)
+  - [Ground Rules](#ground-rules)
+  - [Codebase](#codebase)
+    - [Technologies](#technologies)
+  - [First time setup](#first-time-setup)
 
-You may want to know how to develop such a starter by your own! This starter is actually the result of this [tutorial](https://strapi.io/blog/build-a-blog-with-react-strapi-and-apollo)
 
-![screenshot image](/screenshot.png)
+## Contributing
 
-### Deploy the backend
+**We heartily welcome any and all contributions that match our engineering standards!**
 
-To deploy this Strapi instance you'll need:
+That being said, this codebase isn't your typical open source project because it's not a library or package with a limited scope—it's our entire product.
 
-- [A Heroku account](https://signup.heroku.com/) for free
-- [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
+### Ground Rules
 
-Once you have created these accounts you can deploy your instance by clicking on this button
+#### Reporting a bug or discussing a feature idea
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-react-blog)
+If you found a technical bug on Say Their Names or have ideas for features we should implement, the issue tracker is the best place to share your ideas.
 
-### Deploy the frontend
+#### Fixing a bug or implementing a new feature
 
-**Netlify**
+If you find a bug on Say Their Names and open a PR that fixes it we'll review it as soon as possible.
 
-To deploy this Strapi instance you'll need:
+If you want to implement a new feature, open an issue first to discuss what it'd look like and to ensure it fits in our roadmap and plans for the app (see [the trello board](https://trello.com/b/8x3mo2V5/say-their-names-web) for planned and currently ongoing work).
 
-- [A Netlify account](https://app.netlify.com/signup) for free
+Want to fix a bug or implement an agreed-upon feature? Great, jump to the [local setup instructions](#first-time-setup)!
 
-Once you have created your account you can deploy your instance by clicking on this button.
 
-[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/strapi/strapi-starter-react-blog)
+### Codebase
 
-- Select a repository name and fill the API_URL with your Strapi instance on Heroku (eg: https://your-app.herokuapp.com) without the trailing slash
+#### Technologies
 
-### Features
+With the ground rules out of the way, let's talk about the core architecture of this mono repo:
 
-- 2 Content types: Article, Category
-- Permissions set to `true` for article and category
-- 2 Created articles
-- 3 Created categories
-- Apollo integration (GraphQL) for fetching data from strapi
-- Responsive design using UIkit
+- **Full-stack JavaScript**: We use strapi.io as our open-source headless CMS powered by GraphQL, and React to power our frontend. Almost all of the code you'll touch in this codebase will be JavaScript.
 
-### Pages
 
-- "/" display every articles
-- "/article/:id" display one article
-- "/category/:id" display articles depending on the category
+### First time setup
 
-### Getting started
+The first step to running Spectrum locally is downloading the code by cloning the repository:
 
-**Clone the repository**
+```sh
+git clone https://github.com/FranckNdame/say-their-names.git
 
-```bash
-git clone https://github.com/strapi/strapi-starter-react-blog.git
-cd strapi-starter-react-blog
 ```
-
 ### Start the backend server
 
 ```bash
@@ -88,4 +78,27 @@ npm run develop
 React server is running here => [http://localhost:3000](http://localhost:3000)
 Strapi server is running here => [http://localhost:1337](http://localhost:1337)
 
-Enjoy this starter
+Let's have fun, let's make an impact.
+
+### Deploy the backend
+
+To deploy this Strapi instance you'll need:
+
+- [A Heroku account](https://signup.heroku.com/) for free
+- [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
+
+Once you have created these accounts you can deploy your instance by clicking on this button
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-react-blog)
+
+### Deploy the frontend
+
+**Netlify**
+
+To deploy this Strapi instance you'll need:
+
+- [A Netlify account](https://app.netlify.com/signup) for free
+
+Once you have created your account you can deploy your instance by clicking on this button.
+
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/strapi/strapi-starter-react-blog)
