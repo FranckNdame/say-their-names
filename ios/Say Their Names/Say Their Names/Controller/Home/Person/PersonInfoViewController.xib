@@ -102,7 +102,7 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-RA-Ren" userLabel="Details Stack View">
-                                            <rect key="frame" x="178" y="123" width="212" height="180"/>
+                                            <rect key="frame" x="178" y="123" width="212" height="175"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-KF-IYC">
                                                     <rect key="frame" x="0.0" y="0.0" width="114" height="39"/>
@@ -125,13 +125,13 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AI3-bV-Zvc">
-                                                    <rect key="frame" x="0.0" y="59" width="138" height="121"/>
+                                                    <rect key="frame" x="0.0" y="59" width="138" height="116"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oza-2S-Btw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="45"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-cC-E9u">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="21.5" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="21.5" height="45"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-pP-Rbz">
                                                                             <rect key="frame" x="0.0" y="0.0" width="21.5" height="14"/>
@@ -143,7 +143,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLY-TU-MHb">
-                                                                            <rect key="frame" x="0.0" y="19" width="21.5" height="31"/>
+                                                                            <rect key="frame" x="0.0" y="19" width="21.5" height="26"/>
                                                                             <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
                                                                             <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -151,14 +151,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw8-eo-Slg" userLabel="Separator">
-                                                                    <rect key="frame" x="51.5" y="0.0" width="1" height="50"/>
+                                                                    <rect key="frame" x="51.5" y="0.0" width="1" height="45"/>
                                                                     <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="1" id="xAv-Hh-6X9"/>
                                                                     </constraints>
                                                                 </view>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KG4-c9-TPg">
-                                                                    <rect key="frame" x="82.5" y="0.0" width="55.5" height="50"/>
+                                                                    <rect key="frame" x="82.5" y="0.0" width="55.5" height="45"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHILDREN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6w-fe-FJ2">
                                                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="14.5"/>
@@ -167,7 +167,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-Qe-pj9">
-                                                                            <rect key="frame" x="0.0" y="19.5" width="55.5" height="30.5"/>
+                                                                            <rect key="frame" x="0.0" y="19.5" width="55.5" height="25.5"/>
                                                                             <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="16"/>
                                                                             <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -175,9 +175,12 @@
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Nw8-eo-Slg" firstAttribute="leading" secondItem="oza-2S-Btw" secondAttribute="leading" constant="51.5" id="au6-YH-JXQ"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="upb-Z4-7zC">
-                                                            <rect key="frame" x="0.0" y="70" width="138" height="51"/>
+                                                            <rect key="frame" x="0.0" y="65" width="138" height="51"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRj-5B-Prt" userLabel="Separator">
                                                                     <rect key="frame" x="0.0" y="0.0" width="138" height="1"/>
@@ -209,7 +212,34 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="upb-Z4-7zC" firstAttribute="top" secondItem="AI3-bV-Zvc" secondAttribute="top" constant="65" id="c9n-A4-cDs"/>
+                                                    </constraints>
                                                 </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AI3-bV-Zvc" secondAttribute="trailing" constant="74" id="XnJ-A7-G9v"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="vCw-ad-Wja" userLabel="Story Stack View">
+                                            <rect key="frame" x="24" y="335" width="366" height="118.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINNESOTA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-3t-nKm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="P2p-Dq-jt3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Karla-Bold" family="Karla" pointSize="17"/>
+                                                    <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmX-GH-Yfn">
+                                                    <rect key="frame" x="0.0" y="34" width="355.5" height="84.5"/>
+                                                    <string key="text">The death of George Floyd occurred on May 25, 2020, when Derek Chauvin, a white Minneapolis police officer, kneeled on his neck for at least seven minutes</string>
+                                                    <fontDescription key="fontDescription" name="Karla-Regular" family="Karla" pointSize="18"/>
+                                                    <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </stackView>
                                     </subviews>
@@ -217,12 +247,16 @@
                                     <constraints>
                                         <constraint firstItem="VHv-RA-Ren" firstAttribute="leading" secondItem="ey4-fe-Shf" secondAttribute="trailing" constant="20" id="5fp-Jw-sKh"/>
                                         <constraint firstAttribute="trailing" secondItem="ANh-3m-XIx" secondAttribute="trailing" constant="24" id="6X6-f2-H57"/>
+                                        <constraint firstItem="vCw-ad-Wja" firstAttribute="top" secondItem="ey4-fe-Shf" secondAttribute="bottom" constant="37" id="FFz-bO-cRV"/>
                                         <constraint firstItem="ANh-3m-XIx" firstAttribute="top" secondItem="Vkg-Cb-rtl" secondAttribute="top" constant="30" id="FnC-1g-C9E"/>
                                         <constraint firstItem="VHv-RA-Ren" firstAttribute="top" secondItem="ANh-3m-XIx" secondAttribute="bottom" constant="34" id="GdW-Hs-XGD"/>
+                                        <constraint firstItem="VHv-RA-Ren" firstAttribute="centerY" secondItem="ey4-fe-Shf" secondAttribute="centerY" id="NuG-a4-QGb"/>
                                         <constraint firstItem="ey4-fe-Shf" firstAttribute="leading" secondItem="Vkg-Cb-rtl" secondAttribute="leading" constant="24" id="PwS-I3-9hL"/>
+                                        <constraint firstAttribute="trailing" secondItem="vCw-ad-Wja" secondAttribute="trailing" constant="24" id="T5I-7i-2jQ"/>
                                         <constraint firstItem="ey4-fe-Shf" firstAttribute="top" secondItem="ANh-3m-XIx" secondAttribute="bottom" constant="34" id="mqL-p2-aFY"/>
                                         <constraint firstItem="ANh-3m-XIx" firstAttribute="leading" secondItem="Vkg-Cb-rtl" secondAttribute="leading" constant="24" id="n28-ch-IIJ"/>
                                         <constraint firstAttribute="trailing" secondItem="VHv-RA-Ren" secondAttribute="trailing" constant="24" id="xSL-RB-Iqm"/>
+                                        <constraint firstItem="vCw-ad-Wja" firstAttribute="leading" secondItem="Vkg-Cb-rtl" secondAttribute="leading" constant="24" id="zAx-6f-bn5"/>
                                     </constraints>
                                 </view>
                             </subviews>
