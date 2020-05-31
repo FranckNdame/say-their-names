@@ -45,7 +45,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="58" height="59"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-he-Q4v">
-                                                                    <rect key="frame" x="16" y="16.5" width="26" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="16.5" width="26" height="26"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="eIG-he-Q4v" secondAttribute="height" multiplier="24:24" id="Eie-PB-gnF"/>
                                                                     </constraints>
@@ -55,8 +55,8 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="58" id="74j-c3-fvS"/>
-                                                                <constraint firstItem="eIG-he-Q4v" firstAttribute="centerX" secondItem="meY-n3-un1" secondAttribute="centerX" id="9B8-5k-qeg"/>
                                                                 <constraint firstAttribute="height" constant="59" id="YkL-ub-O44"/>
+                                                                <constraint firstItem="eIG-he-Q4v" firstAttribute="leading" secondItem="meY-n3-un1" secondAttribute="leading" id="sPS-wa-qrP"/>
                                                                 <constraint firstItem="eIG-he-Q4v" firstAttribute="centerY" secondItem="meY-n3-un1" secondAttribute="centerY" id="vbz-pr-CGa"/>
                                                             </constraints>
                                                         </view>
@@ -82,7 +82,7 @@
                                                             <rect key="frame" x="308" y="0.0" width="58" height="59"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="an0-jw-K9V">
-                                                                    <rect key="frame" x="20.5" y="17" width="17" height="25"/>
+                                                                    <rect key="frame" x="41" y="17" width="17" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="an0-jw-K9V" secondAttribute="height" multiplier="15:22" id="ne3-20-eRR"/>
                                                                     </constraints>
@@ -92,7 +92,7 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="58" id="HDZ-z9-Khr"/>
-                                                                <constraint firstItem="an0-jw-K9V" firstAttribute="centerX" secondItem="j9j-pf-J9D" secondAttribute="centerX" id="IM5-n2-2Nq"/>
+                                                                <constraint firstAttribute="trailing" secondItem="an0-jw-K9V" secondAttribute="trailing" id="OGH-v9-SzX"/>
                                                                 <constraint firstAttribute="height" constant="59" id="QUy-7d-ZTB"/>
                                                                 <constraint firstItem="an0-jw-K9V" firstAttribute="centerY" secondItem="j9j-pf-J9D" secondAttribute="centerY" id="Qnm-DZ-NXy"/>
                                                             </constraints>
