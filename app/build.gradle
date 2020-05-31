@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
 
+        renderscriptTargetApi 29
+        renderscriptSupportModeEnabled true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -28,6 +31,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'com.github.Adnan865:MultiShapeBlurView:1.0.1'
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     testImplementation 'junit:junit:4.13'
