@@ -16,3 +16,11 @@ class PersonPhotoCell: UICollectionViewCell {
     }
 
 }
+
+extension PersonPhotoCell {
+    static func size(_ collectionView: UICollectionView) -> CGSize {
+        let size = collectionView.bounds.size
+        let width = (size.height-24)-1
+        return CGSize(width: width, height: size.height)
+    }
+}

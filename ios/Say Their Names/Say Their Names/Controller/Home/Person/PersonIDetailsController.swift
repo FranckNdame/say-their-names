@@ -29,7 +29,7 @@ extension PersonDetailsController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PersonPhotoCell", for: indexPath) as! PersonPhotoCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PersonPhotoCell", for: indexPath)
         return cell
     }
     
@@ -38,7 +38,7 @@ extension PersonDetailsController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 135, height: 157)
+        return PersonPhotoCell.size(collectionView)
     }
     
 }
